@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    
 
 env:
   NODE_VERSION: 20.12.1
@@ -38,3 +40,4 @@ jobs:
           SLACK_USERNAME: GitHub Actions
           SLACK_ICON: ":github:"
           SLACK_FILE_UPLOAD: "diffs/index.diff"
+          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
