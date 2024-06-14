@@ -1,0 +1,38 @@
+on:
+  push:
+    branches:
+      - main
+
+env:
+  NODE_VERSION: 20.12.1
+
+jobs:
+  slack_notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Cache npm
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: node-cache-${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: node-cache-${{ runner.os }}-node-modules-
+
+      # slack通知
+      - name: Slack Notification on Success
+        if: ${{ success() }}
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_TEST_URL }}
+          SLACK_MSG_AUTHOR: "GitHub Actions"
+          SLACK_CHANNEL: "C06RHRCPK7G"
+          SLACK_COLOR: "#36A64F"
+          SLACK_MESSAGE: "sds-web pre環境へのデプロイが成功しました :tada:\npre 環境と本番環境の HTML ファイルの差分です"
+          SLACK_USERNAME: GitHub Actions
+          SLACK_ICON: ":github:"
