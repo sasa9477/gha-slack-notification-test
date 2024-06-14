@@ -1,0 +1,41 @@
+Index: index.html
+===================================================================
+--- index.html	
++++ index.html	
+@@ -1,16 +1,16 @@
+ <!DOCTYPE html><html lang="ja-JP"><head>
+     <meta name="viewport" content="width=device-width">
+     <meta charset="utf-8">
+     <meta name="theme-color" content="#3A98DC">
+     <meta name="description" content="ボカコレ2024夏、2024/8/2(金)〜5(月)に開催。Stem配布、生放送など様々な企画が盛り沢山！！">
+     <meta name="thumbnail" content="https://vocaloid-collection.jp/images/ogp/top.jpg">
+     <meta property="og:title" content="ボカコレ公式">
+-    <meta property="og:description" content="ボカコレ2024夏、2024/8/2(金)〜5(月)に開催。Stem配布、生放送など様々な企画が盛り沢山！！">
++    <meta property="og:description" content="ボカコレ2024夏、2024/8/2(金)〜5(月)に開催。Stem配布、生放送など様々な企画が盛り沢山！！！！！！">
+     <meta property="og:site_name" content="The VOCALOID Collection">
+     <meta property="og:locale" content="ja_JP">
+     <meta property="og:url" content="https://vocaloid-collection.jp/">
+     <meta property="og:image" content="https://vocaloid-collection.jp/images/ogp/top.jpg">
+     <meta property="og:image:width" content="1200">
+     <meta property="og:image:height" content="630">
+     <meta name="twitter:card" content="summary_large_image">
+     <meta name="twitter:site" content="@the_voca_colle">
+@@ -17572,17 +17572,17 @@
+                 },
+                 "artistName": "いよわ",
+                 "artistId": "",
+                 "isChannelVideo": false,
+                 "index": 1
+               },
+               {
+                 "id": "10",
+-                "title": "ヘッジホッグ",
++                "title": "ヘッジホッグ!!",
+                 "kana": "へっじほっぐ",
+                 "contentId": "sm38630030",
+                 "url": "https://drive.google.com/file/d/1g_gPxj8j2S9DZwz_jpIXmft18GjAdEzO/view?usp=drive_link",
+                 "source": {
+                   "src": "/images/strapi/Noz_Thumbnail_c72ba229d6.jpg",
+                   "spSrc": "/images/strapi/Noz_Thumbnail_c72ba229d6.jpg",
+                   "isStrapi": true
+                 },

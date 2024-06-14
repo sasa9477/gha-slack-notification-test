@@ -33,6 +33,8 @@ jobs:
           SLACK_MSG_AUTHOR: "GitHub Actions"
           SLACK_CHANNEL: "C06NJDNVC5Q"
           SLACK_COLOR: "#36A64F"
-          SLACK_MESSAGE: "pre 環境へのデプロイが成功しました :tada:\npre 環境と本番環境の HTML ファイルの差分です"
+          # SLACK_MESSAGE: "pre 環境へのデプロイが成功しました :tada:\npre 環境と本番環境の HTML ファイルの差分です"
+          SLACK_MESSAGE: "test"
           SLACK_USERNAME: GitHub Actions
           SLACK_ICON: ":github:"
+          SLACK_FILE_UPLOAD: "diffs/index.diff"
