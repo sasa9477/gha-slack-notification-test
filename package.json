@@ -2,11 +2,16 @@
   "name": "gha-slack-notification-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "node main.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-fetch": "^3.3.2",
+    "prettier": "^3.3.2"
+  }
 }
