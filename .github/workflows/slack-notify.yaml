@@ -39,5 +39,5 @@ jobs:
           SLACK_MESSAGE: "test"
           SLACK_USERNAME: GitHub Actions
           SLACK_ICON: ":github:"
-          SLACK_FILE_UPLOAD: "diffs/index.diff"
+          SLACK_FILE_UPLOAD: "./diffs/index.diff"
           SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
